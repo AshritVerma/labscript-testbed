@@ -12,6 +12,8 @@ import time
 import typing
 import warnings
 import logging
+import struct
+import decimal
 from typing import List, Dict, Tuple, Optional, Any, Union, Callable, NamedTuple
 from ctypes import cdll, create_string_buffer, POINTER, CFUNCTYPE, c_int, c_ushort, c_void_p, c_char_p, c_uint, \
     c_char, c_double, c_bool, c_float, c_longlong

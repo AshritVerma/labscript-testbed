@@ -2,6 +2,16 @@ from labscript_devices.IMAQdxCamera.blacs_workers import IMAQdxCameraWorker
 
 import sys
 import os
+import struct
+import ctypes
+import time
+import threading
+from labscript_utils import zprocess
+import cv2
+from PIL import Image
+import queue
+from labscript_utils import dedent
+import numpy as np
 
 device_dir = os.path.dirname(os.path.abspath(__file__))
 sdk_path = os.path.join(device_dir, 'thorlabs_tsi_sdk')
@@ -38,17 +48,6 @@ except ImportError as e:
     print(f"Looking for SDK in: {sdk_path}")
     print(f"Files in SDK directory: {os.listdir(sdk_path)}")
     raise
-
-import numpy as np
-
-import ctypes
-import time
-import threading
-from labscript_utils import zprocess
-import cv2
-from PIL import Image
-import queue
-from labscript_utils import dedent
 
 class ZeluxCameraWorker(IMAQdxCameraWorker):
     interface_class = TLCameraSDK
@@ -132,28 +131,15 @@ class ZeluxCameraWorker(IMAQdxCameraWorker):
                 print(f"Error stopping acquisition: {str(e)}")
     
     def configure_path(self):
-        # Get the absolute path to the device directory
-        device_dir = os.path.dirname(os.path.abspath(__file__))
+        dll_path = r"C:\Program Files\Thorlabs\Scientific Imaging\ThorCam"
         
-        # Define paths to SDK components
-        sdk_path = os.path.join(device_dir, 'thorlabs_tsi_sdk')
-        dll_path = os.path.join(device_dir, 'dlls', '64_lib')
-        thorcam_path = os.path.join(device_dir, 'ThorCam')
-        
-        # Add all paths to Python's sys.path if not already there
-        for path in [device_dir, sdk_path, dll_path, thorcam_path]:
-            if path not in sys.path:
-                sys.path.insert(0, path)
-        
-        # Add the DLL paths to the system PATH
-        os.environ['PATH'] = os.pathsep.join([dll_path, thorcam_path, os.environ['PATH']])
-        
+        # Add the DLL path to the system PATH
+        os.environ['PATH'] = dll_path + os.pathsep + os.environ['PATH']
         try:
-            # Python 3.8+ method to specify dll directory
+        # Python 3.8 introduces a new method to specify dll directory
             os.add_dll_directory(dll_path)
-            os.add_dll_directory(thorcam_path)
         except AttributeError:
-            pass
+            pass 
 
     def _create_window(self):
         with self.window_lock:
