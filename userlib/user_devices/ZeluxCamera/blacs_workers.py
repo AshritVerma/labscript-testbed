@@ -64,9 +64,30 @@ class ZeluxCameraWorker(IMAQdxCameraWorker):
     
     @staticmethod
     def save_image(image_data, filename):
-        """Save the image data as a PNG file on local dir as a test."""
-        image = Image.fromarray(image_data)
-        image.save(filename)
+        """Save the image data in a dedicated folder with timestamp to prevent overwrites."""
+        try:
+            # Use absolute path for images directory
+            image_dir = r"C:\Users\cleve\labscript-suite\userlib\user_devices\ZeluxCamera\saved_images"
+            print(f"Creating directory: {image_dir}")
+            os.makedirs(image_dir, exist_ok=True)
+            
+            # Add timestamp to filename to prevent overwrites
+            timestamp = time.strftime("%Y%m%d_%H%M%S")
+            full_filename = f"image_{timestamp}.png"
+            
+            # Create full path
+            save_path = os.path.join(image_dir, full_filename)
+            print(f"Attempting to save image to: {save_path}")
+            
+            # Save the image
+            print(f"Image data shape: {image_data.shape}, dtype: {image_data.dtype}")
+            image = Image.fromarray(image_data)
+            image.save(save_path)
+            print(f"Successfully saved image to: {save_path}")
+        except Exception as e:
+            print(f"Error saving image: {str(e)}")
+            print(f"Image data info: shape={image_data.shape if hasattr(image_data, 'shape') else 'unknown'}, type={type(image_data)}")
+            raise
 
     def set_attributes_smart(self, attributes):
         was_armed = self.is_armed
@@ -292,7 +313,14 @@ class ZeluxCameraWorker(IMAQdxCameraWorker):
         raise Exception(f"Failed to receive frame after {max_attempts} attempts")
     
     def snap(self):
-        return self.acquire()
+        """Acquire one frame and save it."""
+        image = self.acquire()
+        if image is not None:
+            try:
+                self.save_image(image, "snap_image")
+            except Exception as e:
+                print(f"Error saving image: {str(e)}")
+        return image
 
     def _continuous_acquisition(self, dt):
         try:
