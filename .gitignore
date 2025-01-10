@@ -34,3 +34,10 @@ ENV/
 *.h5
 .ini
 
+
+# Large DLL and ZIP files
+*.dll
+*.zip
+Scientific Camera Support/
+ThorCam/
+32_lib/
