@@ -1,0 +1,402 @@
+2024-12-20 11:55:58,058 INFO runmanager: 
+
+===============starting===============
+
+2024-12-20 11:55:58,185 ERROR runmanager: Got an exception:
+Traceback (most recent call last):
+  File "C:\Users\cleve\Documents\Code\CR_labscript\src\runmanager\runmanager\__main__.py", line 3706, in <module>
+    app = RunManager()
+  File "C:\Users\cleve\Documents\Code\CR_labscript\src\runmanager\runmanager\__main__.py", line 1375, in __init__
+    self.output_box = OutputBox(self.ui.verticalLayout_output_tab)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\labscript_utils\qtwidgets\outputbox.py", line 27, in __init__
+    qtutils.outputbox.OutputBox.__init__(
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\qtutils\outputbox.py", line 138, in __init__
+    self.port = socket.bind_to_random_port(bind_address)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zmq\sugar\socket.py", line 499, in bind_to_random_port
+    self.bind(f"{addr}:*")
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zprocess\security.py", line 187, in bind
+    return self._bind_or_connect(addr, bind=True)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zprocess\security.py", line 174, in _bind_or_connect
+    result = method(self, addr)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zmq\sugar\socket.py", line 311, in bind
+    super().bind(addr)
+  File "_zmq.py", line 917, in zmq.backend.cython._zmq.Socket.bind
+  File "_zmq.py", line 179, in zmq.backend.cython._zmq._check_rc
+zmq.error.ZMQError: No such device (addr='tcp://0.0.0.0:*')
+
+2024-12-20 11:56:21,735 INFO runmanager: 
+
+===============starting===============
+
+2024-12-20 11:56:21,776 ERROR runmanager: Got an exception:
+Traceback (most recent call last):
+  File "C:\Users\cleve\Documents\Code\CR_labscript\src\runmanager\runmanager\__main__.py", line 3706, in <module>
+    app = RunManager()
+  File "C:\Users\cleve\Documents\Code\CR_labscript\src\runmanager\runmanager\__main__.py", line 1375, in __init__
+    self.output_box = OutputBox(self.ui.verticalLayout_output_tab)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\labscript_utils\qtwidgets\outputbox.py", line 27, in __init__
+    qtutils.outputbox.OutputBox.__init__(
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\qtutils\outputbox.py", line 138, in __init__
+    self.port = socket.bind_to_random_port(bind_address)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zmq\sugar\socket.py", line 499, in bind_to_random_port
+    self.bind(f"{addr}:*")
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zprocess\security.py", line 187, in bind
+    return self._bind_or_connect(addr, bind=True)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zprocess\security.py", line 174, in _bind_or_connect
+    result = method(self, addr)
+  File "c:\users\cleve\documents\code\cr_labscript\lib\site-packages\zmq\sugar\socket.py", line 311, in bind
+    super().bind(addr)
+  File "_zmq.py", line 917, in zmq.backend.cython._zmq.Socket.bind
+  File "_zmq.py", line 179, in zmq.backend.cython._zmq._check_rc
+zmq.error.ZMQError: No such device (addr='tcp://0.0.0.0:*')
+
+2024-12-20 11:58:45,786 INFO runmanager: 
+
+===============starting===============
+
+2024-12-20 11:58:56,538 INFO runmanager: Engage
+2024-12-20 11:58:56,539 INFO runmanager: Parsing globals...
+2024-12-20 11:58:56,884 INFO runmanager: Making h5 files
+2024-12-20 11:58:56,894 DEBUG runmanager: <generator object make_run_files at 0x0000016F5495A970>
+2024-12-20 11:58:56,894 INFO runmanager: end engage
+2024-12-20 12:00:17,268 INFO runmanager: Engage
+2024-12-20 12:00:17,269 INFO runmanager: Parsing globals...
+2024-12-20 12:00:17,271 INFO runmanager: Making h5 files
+2024-12-20 12:00:17,284 DEBUG runmanager: <generator object make_run_files at 0x0000016F5495AB30>
+2024-12-20 12:00:17,284 INFO runmanager: end engage
+2024-12-20 12:02:58,190 INFO runmanager: Engage
+2024-12-20 12:02:58,191 INFO runmanager: Parsing globals...
+2024-12-20 12:02:58,192 INFO runmanager: Making h5 files
+2024-12-20 12:02:58,205 DEBUG runmanager: <generator object make_run_files at 0x0000016F5495A9E0>
+2024-12-20 12:02:58,206 INFO runmanager: end engage
+2024-12-20 12:38:41,715 INFO runmanager: 
+
+===============starting===============
+
+2024-12-20 12:39:00,882 INFO runmanager: Engage
+2024-12-20 12:39:00,883 INFO runmanager: Parsing globals...
+2024-12-20 12:39:01,192 INFO runmanager: Making h5 files
+2024-12-20 12:39:01,214 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959820>
+2024-12-20 12:39:01,214 INFO runmanager: end engage
+2024-12-20 12:43:01,173 INFO runmanager: Engage
+2024-12-20 12:43:01,174 INFO runmanager: Parsing globals...
+2024-12-20 12:43:01,175 INFO runmanager: Making h5 files
+2024-12-20 12:43:01,186 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959970>
+2024-12-20 12:43:01,186 INFO runmanager: end engage
+2024-12-20 12:47:00,406 INFO runmanager: Engage
+2024-12-20 12:47:00,406 INFO runmanager: Parsing globals...
+2024-12-20 12:47:00,407 INFO runmanager: Making h5 files
+2024-12-20 12:47:00,420 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959B30>
+2024-12-20 12:47:00,420 INFO runmanager: end engage
+2024-12-20 12:48:16,625 INFO runmanager: Engage
+2024-12-20 12:48:16,626 INFO runmanager: Parsing globals...
+2024-12-20 12:48:16,628 INFO runmanager: Making h5 files
+2024-12-20 12:48:16,641 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9596D0>
+2024-12-20 12:48:16,641 INFO runmanager: end engage
+2024-12-20 12:48:38,009 INFO runmanager: Engage
+2024-12-20 12:48:38,009 INFO runmanager: Parsing globals...
+2024-12-20 12:48:38,010 INFO runmanager: Making h5 files
+2024-12-20 12:48:38,025 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959B30>
+2024-12-20 12:48:38,025 INFO runmanager: end engage
+2024-12-20 13:00:12,308 INFO runmanager: Engage
+2024-12-20 13:00:12,308 INFO runmanager: Parsing globals...
+2024-12-20 13:00:12,310 INFO runmanager: Making h5 files
+2024-12-20 13:00:12,325 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9596D0>
+2024-12-20 13:00:12,325 INFO runmanager: end engage
+2024-12-20 13:00:22,843 INFO runmanager: Engage
+2024-12-20 13:00:22,846 INFO runmanager: Parsing globals...
+2024-12-20 13:00:22,849 INFO runmanager: Making h5 files
+2024-12-20 13:00:22,872 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9599E0>
+2024-12-20 13:00:22,872 INFO runmanager: end engage
+2024-12-20 13:00:23,014 INFO runmanager: Engage
+2024-12-20 13:00:23,015 INFO runmanager: Parsing globals...
+2024-12-20 13:00:23,016 INFO runmanager: Making h5 files
+2024-12-20 13:00:23,031 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959B30>
+2024-12-20 13:00:23,031 INFO runmanager: end engage
+2024-12-20 13:00:23,169 INFO runmanager: Engage
+2024-12-20 13:00:23,171 INFO runmanager: Parsing globals...
+2024-12-20 13:00:23,173 INFO runmanager: Making h5 files
+2024-12-20 13:00:23,187 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959A50>
+2024-12-20 13:00:23,188 INFO runmanager: end engage
+2024-12-20 13:00:23,315 INFO runmanager: Engage
+2024-12-20 13:00:23,315 INFO runmanager: Parsing globals...
+2024-12-20 13:00:23,316 INFO runmanager: Making h5 files
+2024-12-20 13:00:23,326 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959970>
+2024-12-20 13:00:23,326 INFO runmanager: end engage
+2024-12-20 13:00:23,473 INFO runmanager: Engage
+2024-12-20 13:00:23,474 INFO runmanager: Parsing globals...
+2024-12-20 13:00:23,477 INFO runmanager: Making h5 files
+2024-12-20 13:00:23,498 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959820>
+2024-12-20 13:00:23,498 INFO runmanager: end engage
+2024-12-20 13:00:48,256 INFO runmanager: Engage
+2024-12-20 13:00:48,257 INFO runmanager: Parsing globals...
+2024-12-20 13:00:48,258 INFO runmanager: Making h5 files
+2024-12-20 13:00:48,275 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9596D0>
+2024-12-20 13:00:48,275 INFO runmanager: end engage
+2024-12-20 13:00:48,433 INFO runmanager: Engage
+2024-12-20 13:00:48,434 INFO runmanager: Parsing globals...
+2024-12-20 13:00:48,435 INFO runmanager: Making h5 files
+2024-12-20 13:00:48,445 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959D60>
+2024-12-20 13:00:48,445 INFO runmanager: end engage
+2024-12-20 13:00:48,597 INFO runmanager: Engage
+2024-12-20 13:00:48,597 INFO runmanager: Parsing globals...
+2024-12-20 13:00:48,599 INFO runmanager: Making h5 files
+2024-12-20 13:00:48,615 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959BA0>
+2024-12-20 13:00:48,615 INFO runmanager: end engage
+2024-12-20 13:00:51,660 INFO runmanager: Engage
+2024-12-20 13:00:51,660 INFO runmanager: Parsing globals...
+2024-12-20 13:00:51,661 INFO runmanager: Making h5 files
+2024-12-20 13:00:51,675 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959B30>
+2024-12-20 13:00:51,675 INFO runmanager: end engage
+2024-12-20 13:00:52,356 INFO runmanager: Engage
+2024-12-20 13:00:52,356 INFO runmanager: Parsing globals...
+2024-12-20 13:00:52,358 INFO runmanager: Making h5 files
+2024-12-20 13:00:52,370 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959970>
+2024-12-20 13:00:52,370 INFO runmanager: end engage
+2024-12-20 13:00:52,600 INFO runmanager: Engage
+2024-12-20 13:00:52,600 INFO runmanager: Parsing globals...
+2024-12-20 13:00:52,601 INFO runmanager: Making h5 files
+2024-12-20 13:00:52,612 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9596D0>
+2024-12-20 13:00:52,612 INFO runmanager: end engage
+2024-12-20 13:00:52,765 INFO runmanager: Engage
+2024-12-20 13:00:52,765 INFO runmanager: Parsing globals...
+2024-12-20 13:00:52,766 INFO runmanager: Making h5 files
+2024-12-20 13:00:52,782 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959A50>
+2024-12-20 13:00:52,783 INFO runmanager: end engage
+2024-12-20 13:00:52,947 INFO runmanager: Engage
+2024-12-20 13:00:52,948 INFO runmanager: Parsing globals...
+2024-12-20 13:00:52,949 INFO runmanager: Making h5 files
+2024-12-20 13:00:52,961 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9599E0>
+2024-12-20 13:00:52,961 INFO runmanager: end engage
+2024-12-20 13:00:53,139 INFO runmanager: Engage
+2024-12-20 13:00:53,140 INFO runmanager: Parsing globals...
+2024-12-20 13:00:53,141 INFO runmanager: Making h5 files
+2024-12-20 13:00:53,155 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959D60>
+2024-12-20 13:00:53,155 INFO runmanager: end engage
+2024-12-20 13:01:00,556 INFO runmanager: Engage
+2024-12-20 13:01:00,557 INFO runmanager: Parsing globals...
+2024-12-20 13:01:00,559 INFO runmanager: Making h5 files
+2024-12-20 13:01:00,579 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959970>
+2024-12-20 13:01:00,579 INFO runmanager: end engage
+2024-12-20 13:01:02,575 INFO runmanager: Engage
+2024-12-20 13:01:02,576 INFO runmanager: Parsing globals...
+2024-12-20 13:01:02,577 INFO runmanager: Making h5 files
+2024-12-20 13:01:02,589 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959A50>
+2024-12-20 13:01:02,589 INFO runmanager: end engage
+2024-12-20 13:01:02,744 INFO runmanager: Engage
+2024-12-20 13:01:02,745 INFO runmanager: Parsing globals...
+2024-12-20 13:01:02,745 INFO runmanager: Making h5 files
+2024-12-20 13:01:02,757 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959B30>
+2024-12-20 13:01:02,757 INFO runmanager: end engage
+2024-12-20 13:01:02,917 INFO runmanager: Engage
+2024-12-20 13:01:02,917 INFO runmanager: Parsing globals...
+2024-12-20 13:01:02,918 INFO runmanager: Making h5 files
+2024-12-20 13:01:02,930 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF9596D0>
+2024-12-20 13:01:02,930 INFO runmanager: end engage
+2024-12-20 13:01:12,196 INFO runmanager: Engage
+2024-12-20 13:01:12,197 INFO runmanager: Parsing globals...
+2024-12-20 13:01:12,198 INFO runmanager: Making h5 files
+2024-12-20 13:01:12,215 DEBUG runmanager: <generator object make_run_files at 0x000001C5CF959820>
+2024-12-20 13:01:12,216 INFO runmanager: end engage
+2024-12-23 13:29:42,620 INFO runmanager: 
+
+===============starting===============
+
+2024-12-30 16:13:05,740 INFO runmanager: 
+
+===============starting===============
+
+2024-12-30 16:13:29,889 INFO runmanager: Engage
+2024-12-30 16:13:29,889 INFO runmanager: Parsing globals...
+2024-12-30 16:13:30,281 INFO runmanager: Making h5 files
+2024-12-30 16:13:30,295 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BEB0>
+2024-12-30 16:13:30,295 INFO runmanager: end engage
+2024-12-30 16:13:41,404 INFO runmanager: Engage
+2024-12-30 16:13:41,404 INFO runmanager: Parsing globals...
+2024-12-30 16:13:41,405 INFO runmanager: Making h5 files
+2024-12-30 16:13:41,418 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BB30>
+2024-12-30 16:13:41,418 INFO runmanager: end engage
+2024-12-30 16:13:43,831 INFO runmanager: Engage
+2024-12-30 16:13:43,832 INFO runmanager: Parsing globals...
+2024-12-30 16:13:43,833 INFO runmanager: Making h5 files
+2024-12-30 16:13:43,845 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BC80>
+2024-12-30 16:13:43,845 INFO runmanager: end engage
+2024-12-30 16:13:53,327 INFO runmanager: Engage
+2024-12-30 16:13:53,328 INFO runmanager: Parsing globals...
+2024-12-30 16:13:53,329 INFO runmanager: Making h5 files
+2024-12-30 16:13:53,343 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BEB0>
+2024-12-30 16:13:53,343 INFO runmanager: end engage
+2024-12-30 16:13:53,492 INFO runmanager: Engage
+2024-12-30 16:13:53,492 INFO runmanager: Parsing globals...
+2024-12-30 16:13:53,493 INFO runmanager: Making h5 files
+2024-12-30 16:13:53,508 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33B820>
+2024-12-30 16:13:53,508 INFO runmanager: end engage
+2024-12-30 16:13:53,668 INFO runmanager: Engage
+2024-12-30 16:13:53,668 INFO runmanager: Parsing globals...
+2024-12-30 16:13:53,668 INFO runmanager: Making h5 files
+2024-12-30 16:13:53,680 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BBA0>
+2024-12-30 16:13:53,681 INFO runmanager: end engage
+2024-12-30 16:13:53,866 INFO runmanager: Engage
+2024-12-30 16:13:53,867 INFO runmanager: Parsing globals...
+2024-12-30 16:13:53,868 INFO runmanager: Making h5 files
+2024-12-30 16:13:53,881 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BB30>
+2024-12-30 16:13:53,881 INFO runmanager: end engage
+2025-01-08 15:34:55,196 INFO runmanager: Engage
+2025-01-08 15:34:55,198 INFO runmanager: Parsing globals...
+2025-01-08 15:34:55,210 INFO runmanager: Making h5 files
+2025-01-08 15:34:55,226 DEBUG runmanager: <generator object make_run_files at 0x00000177BF33BAC0>
+2025-01-08 15:34:55,226 INFO runmanager: end engage
+2025-01-09 18:21:16,345 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 18:52:59,723 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 18:53:37,528 INFO runmanager: Engage
+2025-01-09 18:53:37,528 INFO runmanager: Parsing globals...
+2025-01-09 18:53:37,795 INFO runmanager: Making h5 files
+2025-01-09 18:53:37,802 DEBUG runmanager: <generator object make_run_files at 0x0000024F5961BDD0>
+2025-01-09 18:53:37,802 INFO runmanager: end engage
+2025-01-09 19:13:21,141 INFO runmanager: Engage
+2025-01-09 19:13:21,141 INFO runmanager: Parsing globals...
+2025-01-09 19:13:21,142 INFO runmanager: Making h5 files
+2025-01-09 19:13:21,154 DEBUG runmanager: <generator object make_run_files at 0x0000024F5961BF20>
+2025-01-09 19:13:21,154 INFO runmanager: end engage
+2025-01-09 19:13:32,658 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:13:40,878 INFO runmanager: Engage
+2025-01-09 19:13:40,879 INFO runmanager: Parsing globals...
+2025-01-09 19:13:41,176 INFO runmanager: Making h5 files
+2025-01-09 19:13:41,188 DEBUG runmanager: <generator object make_run_files at 0x0000019038BEBDD0>
+2025-01-09 19:13:41,189 INFO runmanager: end engage
+2025-01-09 19:15:22,996 INFO runmanager: Engage
+2025-01-09 19:15:22,996 INFO runmanager: Parsing globals...
+2025-01-09 19:15:22,997 INFO runmanager: Making h5 files
+2025-01-09 19:15:23,012 DEBUG runmanager: <generator object make_run_files at 0x0000019038BEBF20>
+2025-01-09 19:15:23,012 INFO runmanager: end engage
+2025-01-09 19:16:40,612 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:16:50,878 INFO runmanager: Engage
+2025-01-09 19:16:50,879 INFO runmanager: Parsing globals...
+2025-01-09 19:16:51,151 INFO runmanager: Making h5 files
+2025-01-09 19:16:51,164 DEBUG runmanager: <generator object make_run_files at 0x000002F30D53ADD0>
+2025-01-09 19:16:51,164 INFO runmanager: end engage
+2025-01-09 19:19:12,381 INFO runmanager: Engage
+2025-01-09 19:19:12,382 INFO runmanager: Parsing globals...
+2025-01-09 19:19:12,382 INFO runmanager: Making h5 files
+2025-01-09 19:19:12,396 DEBUG runmanager: <generator object make_run_files at 0x000002F30D53AF20>
+2025-01-09 19:19:12,397 INFO runmanager: end engage
+2025-01-09 19:19:20,284 INFO runmanager: Engage
+2025-01-09 19:19:20,284 INFO runmanager: Parsing globals...
+2025-01-09 19:19:20,285 INFO runmanager: Making h5 files
+2025-01-09 19:19:20,299 DEBUG runmanager: <generator object make_run_files at 0x000002F30D53ADD0>
+2025-01-09 19:19:20,300 INFO runmanager: end engage
+2025-01-09 19:21:06,592 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:21:14,974 INFO runmanager: Engage
+2025-01-09 19:21:14,974 INFO runmanager: Parsing globals...
+2025-01-09 19:21:15,259 INFO runmanager: Making h5 files
+2025-01-09 19:21:15,266 DEBUG runmanager: <generator object make_run_files at 0x000001BB5473ADD0>
+2025-01-09 19:21:15,266 INFO runmanager: end engage
+2025-01-09 19:22:11,124 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:22:29,408 INFO runmanager: Engage
+2025-01-09 19:22:29,408 INFO runmanager: Parsing globals...
+2025-01-09 19:22:29,682 INFO runmanager: Making h5 files
+2025-01-09 19:22:29,687 DEBUG runmanager: <generator object make_run_files at 0x0000027DE0CECDD0>
+2025-01-09 19:22:29,687 INFO runmanager: end engage
+2025-01-09 19:23:26,492 INFO runmanager: Engage
+2025-01-09 19:23:26,492 INFO runmanager: Parsing globals...
+2025-01-09 19:23:26,493 INFO runmanager: Making h5 files
+2025-01-09 19:23:26,499 DEBUG runmanager: <generator object make_run_files at 0x0000027DE0CECEB0>
+2025-01-09 19:23:26,499 INFO runmanager: end engage
+2025-01-09 19:25:51,425 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:25:58,127 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:26:06,508 INFO runmanager: Engage
+2025-01-09 19:26:06,508 INFO runmanager: Parsing globals...
+2025-01-09 19:26:06,849 INFO runmanager: Making h5 files
+2025-01-09 19:26:06,855 DEBUG runmanager: <generator object make_run_files at 0x0000025EA4E6ADD0>
+2025-01-09 19:26:06,856 INFO runmanager: end engage
+2025-01-09 19:28:43,545 INFO runmanager: Engage
+2025-01-09 19:28:43,545 INFO runmanager: Parsing globals...
+2025-01-09 19:28:43,546 INFO runmanager: Making h5 files
+2025-01-09 19:28:43,552 DEBUG runmanager: <generator object make_run_files at 0x0000025EA4E6AF20>
+2025-01-09 19:28:43,552 INFO runmanager: end engage
+2025-01-09 19:32:31,456 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:32:40,544 INFO runmanager: Engage
+2025-01-09 19:32:40,544 INFO runmanager: Parsing globals...
+2025-01-09 19:32:40,816 INFO runmanager: Making h5 files
+2025-01-09 19:32:40,829 DEBUG runmanager: <generator object make_run_files at 0x0000024ECD7F9DD0>
+2025-01-09 19:32:40,829 INFO runmanager: end engage
+2025-01-09 19:37:41,070 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 19:37:53,816 INFO runmanager: Engage
+2025-01-09 19:37:53,816 INFO runmanager: Parsing globals...
+2025-01-09 19:37:54,091 INFO runmanager: Making h5 files
+2025-01-09 19:37:54,098 DEBUG runmanager: <generator object make_run_files at 0x00000220253AADD0>
+2025-01-09 19:37:54,099 INFO runmanager: end engage
+2025-01-09 19:37:56,875 INFO runmanager: Engage
+2025-01-09 19:37:56,876 INFO runmanager: Parsing globals...
+2025-01-09 19:37:56,876 INFO runmanager: Making h5 files
+2025-01-09 19:37:56,889 DEBUG runmanager: <generator object make_run_files at 0x00000220253AAEB0>
+2025-01-09 19:37:56,889 INFO runmanager: end engage
+2025-01-09 19:37:57,045 INFO runmanager: Engage
+2025-01-09 19:37:57,046 INFO runmanager: Parsing globals...
+2025-01-09 19:37:57,046 INFO runmanager: Making h5 files
+2025-01-09 19:37:57,052 DEBUG runmanager: <generator object make_run_files at 0x00000220253AAF20>
+2025-01-09 19:37:57,052 INFO runmanager: end engage
+2025-01-09 19:37:57,194 INFO runmanager: Engage
+2025-01-09 19:37:57,195 INFO runmanager: Parsing globals...
+2025-01-09 19:37:57,195 INFO runmanager: Making h5 files
+2025-01-09 19:37:57,203 DEBUG runmanager: <generator object make_run_files at 0x00000220253AADD0>
+2025-01-09 19:37:57,203 INFO runmanager: end engage
+2025-01-09 19:37:57,345 INFO runmanager: Engage
+2025-01-09 19:37:57,345 INFO runmanager: Parsing globals...
+2025-01-09 19:37:57,345 INFO runmanager: Making h5 files
+2025-01-09 19:37:57,352 DEBUG runmanager: <generator object make_run_files at 0x00000220253AAEB0>
+2025-01-09 19:37:57,352 INFO runmanager: end engage
+2025-01-09 19:38:24,249 INFO runmanager: Engage
+2025-01-09 19:38:24,251 INFO runmanager: Parsing globals...
+2025-01-09 19:38:24,251 INFO runmanager: Making h5 files
+2025-01-09 19:38:24,262 DEBUG runmanager: <generator object make_run_files at 0x00000220253AADD0>
+2025-01-09 19:38:24,262 INFO runmanager: end engage
+2025-01-09 19:38:26,138 INFO runmanager: Engage
+2025-01-09 19:38:26,138 INFO runmanager: Parsing globals...
+2025-01-09 19:38:26,138 INFO runmanager: Making h5 files
+2025-01-09 19:38:26,151 DEBUG runmanager: <generator object make_run_files at 0x00000220253AAF20>
+2025-01-09 19:38:26,151 INFO runmanager: end engage
+2025-01-09 20:32:17,602 INFO runmanager: 
+
+===============starting===============
+
+2025-01-09 20:32:37,041 INFO runmanager: Engage
+2025-01-09 20:32:37,042 INFO runmanager: Parsing globals...
+2025-01-09 20:32:37,299 INFO runmanager: Making h5 files
+2025-01-09 20:32:37,311 DEBUG runmanager: <generator object make_run_files at 0x0000029CF07FBE40>
+2025-01-09 20:32:37,311 INFO runmanager: end engage
+2025-01-09 20:32:48,855 INFO runmanager: Engage
+2025-01-09 20:32:48,855 INFO runmanager: Parsing globals...
+2025-01-09 20:32:48,855 INFO runmanager: Making h5 files
+2025-01-09 20:32:48,867 DEBUG runmanager: <generator object make_run_files at 0x0000029CF07FBA50>
+2025-01-09 20:32:48,867 INFO runmanager: end engage
