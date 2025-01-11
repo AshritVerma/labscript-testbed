@@ -190,7 +190,6 @@ class ZeluxCameraWorker(IMAQdxCameraWorker):
         return self._is_armed
     
     def init(self):
-
         print(f"ZeluxCameraWorker init method called, so configuring path with sdk dlls")
         self.configure_path()
         self.window_name = "Image from zelux camera"
@@ -199,7 +198,6 @@ class ZeluxCameraWorker(IMAQdxCameraWorker):
         self.start_acquisition_thread()
 
         try:
-            
             self.sdk = TLCameraSDK()
             print("TLCameraSDK initialized successfully")
         except Exception as e:
@@ -216,16 +214,18 @@ class ZeluxCameraWorker(IMAQdxCameraWorker):
         print(f"Available cameras: {camera_list}")
 
         try:
-            #self.camera = self.sdk.open_camera(self.sdk.discover_available_cameras()[0])
-            self.camera = self.sdk.open_camera(str(self.serial_number))
+            # Convert serial number back to string format
+            serial_str = hex(self.serial_number)[2:].upper()
+            print(f"Attempting to connect to camera with serial number: {serial_str}")
+            self.camera = self.sdk.open_camera(serial_str)
         except TLCameraError as e:
             print(f"Error opening camera: {e}")
             print("Available cameras:")
             for cam_serial in camera_list:
                 print(f" - {cam_serial}")
-            raise Exception(f"Could not open camera with serial number {self.serial_number}. Please check if the serial number is correct and the camera is connected.")
+            raise Exception(f"Could not open camera with serial number {serial_str}. Please check if the serial number is correct and the camera is connected.")
 
-        print(f"Successfully opened camera with serial number: {self.serial_number}")
+        print(f"Successfully opened camera with serial number: {serial_str}")
 
         try:
             # Set some camera parameters

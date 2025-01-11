@@ -25,76 +25,102 @@ class ZeluxCamera(IMAQdxCamera):
                 "offset_x",
                 "offset_y",
                 "roi",
-            ],
-            }
+                "acquisition_timeout",
+                "fail_on_error"
+            ]
+        }
     )
     def __init__(self, name, parent_device, connection,
-                 exposure_time_us=1000, image_width_pixels=1280, image_height_pixels=1024,
-                 offset_x=0, offset_y=0, roi=None, **kwargs):
+                 serial_number,
+                 exposure_time_us=1000,
+                 image_width_pixels=1280,
+                 image_height_pixels=1024,
+                 offset_x=0,
+                 offset_y=0,
+                 roi=None,
+                 acquisition_timeout=5.0,
+                 fail_on_error=True,
+                 **kwargs):
         
-        # Initialize Zelux-specific attributes
-        self.exposure_time_us = exposure_time_us
-        self.image_width_pixels = image_width_pixels
-        self.image_height_pixels = image_height_pixels
-        self.offset_x = offset_x
-        self.offset_y = offset_y
-        self.roi = roi if roi else (0, 0, image_width_pixels, image_height_pixels)
+        # Store our own properties
+        self._exposure_time_us = exposure_time_us
+        self._image_width_pixels = image_width_pixels
+        self._image_height_pixels = image_height_pixels
+        self._offset_x = offset_x
+        self._offset_y = offset_y
+        self._roi = roi if roi else (0, 0, image_width_pixels, image_height_pixels)
+        self._acquisition_timeout = acquisition_timeout
+        self._fail_on_error = fail_on_error
 
-        # Update camera_attributes with Zelux-specific settings
-        camera_attributes = kwargs.get('camera_attributes', {})
-        camera_attributes.update({
-            'exposure_time_us': exposure_time_us,
-            'image_width_pixels': image_width_pixels,
-            'image_height_pixels': image_height_pixels,
-            'offset_x': offset_x,
-            'offset_y': offset_y,
-            'roi': self.roi,
-        })
-        kwargs['camera_attributes'] = camera_attributes
+        # Convert serial number to string if it's not already
+        if not isinstance(serial_number, str):
+            serial_number = str(serial_number)
 
-        # Call the parent class constructor
-        super().__init__(name, parent_device, connection, **kwargs)
+        # Call parent with minimal parameters
+        super().__init__(
+            name=name,
+            parent_device=parent_device,
+            connection=connection,
+            serial_number=serial_number,
+            stop_acquisition_timeout=acquisition_timeout,
+            exception_on_failed_shot=fail_on_error,
+            **kwargs
+        )
+
+    @property
+    def exposure_time_us(self):
+        return self._exposure_time_us
+
+    @property
+    def image_width_pixels(self):
+        return self._image_width_pixels
+
+    @property
+    def image_height_pixels(self):
+        return self._image_height_pixels
+
+    @property
+    def offset_x(self):
+        return self._offset_x
+
+    @property
+    def offset_y(self):
+        return self._offset_y
+
+    @property
+    def roi(self):
+        return self._roi
+
+    @property
+    def acquisition_timeout(self):
+        return self._acquisition_timeout
+
+    @property
+    def fail_on_error(self):
+        return self._fail_on_error
 
     def expose(self, t, name, frametype='frame', trigger_duration=None):
-        # Update exposure time and image size before calling the parent method
-        self.set_property('exposure_time_us', self.exposure_time_us, location='device')
-        self.set_property('image_width_pixels', self.image_width_pixels, location='device')
-        self.set_property('image_height_pixels', self.image_height_pixels, location='device')
-
-        # Call the parent class's expose method
+        """Request an exposure at the given time."""
         super().expose(t, name, frametype, trigger_duration)
 
-    # def generate_code(self, hdf5_file):
-    #     # Call the parent class's generate_code method
-    #     super().generate_code(hdf5_file)
+    def generate_code(self, hdf5_file):
+        super().generate_code(hdf5_file)
     
-    def change_exposure_time(self, exposure_time_us):
-        """Change the exposure time of the camera."""
-        self.exposure_time_us = exposure_time_us
+    def get_property_value(self, name):
+        """Get the current value of a property"""
+        if hasattr(self, f"_{name}"):
+            return getattr(self, f"_{name}")
+        return None
 
-    def change_image_size(self, image_width_pixels, image_height_pixels):
-        """Change the image size of the camera."""
-        self.image_width_pixels = image_width_pixels
-        self.image_height_pixels = image_height_pixels
-
-    def change_roi(self, upper_left_x_pixels, upper_left_y_pixels, lower_right_x_pixels, lower_right_y_pixels):
-        """Change the region of interest of the camera."""
-
-        new_roi = ROI(upper_left_x_pixels=upper_left_x_pixels, upper_left_y_pixels=upper_left_y_pixels,
-                      lower_right_x_pixels=lower_right_x_pixels, lower_right_y_pixels=lower_right_y_pixels)
-
-        print(f"Setting ROI to: {new_roi}")
-        self.roi = new_roi
-
-        actual_roi = self.roi
-        print(f"Actual ROI: {actual_roi}")
-
-        if actual_roi == new_roi:
-            print("ROI set successfully!")
-        else:
-            print("Warning: ROI not set exactly as expected.")
-            print(f"Expected: {new_roi}")
-            print(f"Actual: {actual_roi}")
-
-        print(f"New image size: {self.image_width_pixels}x{self.image_height_pixels}")
-        # print(f"Sensor pixel size: {self.sensor_pixel_width_um}um x {self.sensor_pixel_height_um}um")
+    def get_all_properties(self):
+        """Get all camera properties as a dictionary"""
+        return {
+            'exposure_time_us': self._exposure_time_us,
+            'image_width_pixels': self._image_width_pixels,
+            'image_height_pixels': self._image_height_pixels,
+            'offset_x': self._offset_x,
+            'offset_y': self._offset_y,
+            'roi': self._roi,
+            'acquisition_timeout': self._acquisition_timeout,
+            'fail_on_error': self._fail_on_error
+        }

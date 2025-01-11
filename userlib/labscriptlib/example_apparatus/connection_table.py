@@ -20,14 +20,16 @@ def cxn_table():
     ZeluxCamera(
         name='zelux',
         parent_device=digital_out,
-        connection='',
-        serial_number=18666,
+        connection='trigger',
+        serial_number="18666",
         exposure_time_us=40000,
         image_width_pixels=1280,
         image_height_pixels=1024,
         offset_x=0,
         offset_y=0,
-        roi=(0, 0, 1280, 1024)  # Pass ROI as a tuple directly
+        roi=(0, 0, 1280, 1024),
+        acquisition_timeout=5.0,
+        fail_on_error=True
     )
 
 if __name__ == '__main__':

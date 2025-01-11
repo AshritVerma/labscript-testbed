@@ -400,3 +400,31 @@ zmq.error.ZMQError: No such device (addr='tcp://0.0.0.0:*')
 2025-01-09 20:32:48,855 INFO runmanager: Making h5 files
 2025-01-09 20:32:48,867 DEBUG runmanager: <generator object make_run_files at 0x0000029CF07FBA50>
 2025-01-09 20:32:48,867 INFO runmanager: end engage
+2025-01-10 18:29:41,020 INFO runmanager: 
+
+===============starting===============
+
+2025-01-10 18:29:59,929 INFO runmanager: Engage
+2025-01-10 18:29:59,930 INFO runmanager: Parsing globals...
+2025-01-10 18:30:00,236 INFO runmanager: Making h5 files
+2025-01-10 18:30:00,249 DEBUG runmanager: <generator object make_run_files at 0x0000022A02DF0900>
+2025-01-10 18:30:00,249 INFO runmanager: end engage
+2025-01-10 18:37:23,830 INFO runmanager: Engage
+2025-01-10 18:37:23,831 INFO runmanager: Parsing globals...
+2025-01-10 18:37:23,832 INFO runmanager: Making h5 files
+2025-01-10 18:37:23,850 DEBUG runmanager: <generator object make_run_files at 0x0000022A02DF0CF0>
+2025-01-10 18:37:23,850 INFO runmanager: end engage
+2025-01-10 18:59:56,554 INFO runmanager: 
+
+===============starting===============
+
+2025-01-10 19:00:34,745 INFO runmanager: Engage
+2025-01-10 19:00:34,747 INFO runmanager: Parsing globals...
+2025-01-10 19:00:35,051 INFO runmanager: Making h5 files
+2025-01-10 19:00:35,077 DEBUG runmanager: <generator object make_run_files at 0x0000024FC7EFE900>
+2025-01-10 19:00:35,077 INFO runmanager: end engage
+2025-01-10 19:01:46,313 INFO runmanager: Engage
+2025-01-10 19:01:46,313 INFO runmanager: Parsing globals...
+2025-01-10 19:01:46,314 INFO runmanager: Making h5 files
+2025-01-10 19:01:46,330 DEBUG runmanager: <generator object make_run_files at 0x0000024FC1A919E0>
+2025-01-10 19:01:46,330 INFO runmanager: end engage

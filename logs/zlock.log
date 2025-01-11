@@ -14790,3 +14790,105 @@
 [2025-01-10 18:11:56,713] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
 [2025-01-10 18:11:57,978] INFO [127.0.0.1] said hello
 [2025-01-10 18:11:57,978] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:17:34,662] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:17:34,664] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:17:35,750] INFO [127.0.0.1] said hello
+[2025-01-10 18:17:35,751] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:18:04,744] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:18:04,746] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:18:05,770] INFO [127.0.0.1] said hello
+[2025-01-10 18:18:05,770] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:20:09,693] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:20:09,695] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:20:10,796] INFO [127.0.0.1] said hello
+[2025-01-10 18:20:10,796] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:22:05,337] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:22:05,339] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:22:06,396] INFO [127.0.0.1] said hello
+[2025-01-10 18:22:06,396] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:22:48,901] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:22:48,903] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:22:50,016] INFO [127.0.0.1] said hello
+[2025-01-10 18:22:50,017] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:23:56,151] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:23:56,153] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:23:57,887] INFO [127.0.0.1] said hello
+[2025-01-10 18:23:57,887] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:24:13,821] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r/w) Z:\Experiments\example_apparatus\connection_table\.next_sequence_index
+[2025-01-10 18:24:13,828] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table\.next_sequence_index
+[2025-01-10 18:24:13,829] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r/w) Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:13,831] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:14,443] INFO [127.0.0.1] said hello
+[2025-01-10 18:24:14,443] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:24:15,378] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-12932:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:15,385] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-12932:MainThread released Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:15,386] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-12932:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:15,386] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-12932:MainThread released Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:16,011] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-12932:MainThread acquired (r/w) Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:16,029] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-12932:MainThread released Z:\Experiments\example_apparatus\connection_table.temp.h5
+[2025-01-10 18:24:16,995] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread acquired (r/w) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:17,020] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-34156:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:19,427] INFO [127.0.0.1] said hello
+[2025-01-10 18:24:19,427] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:24:32,853] INFO [127.0.0.1] said hello
+[2025-01-10 18:24:32,853] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:24:33,422] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:24:33,432] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:24:33,457] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r/w) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:33,468] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:33,469] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:33,480] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:33,481] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:33,484] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:35,291] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:24:35,293] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:24:35,406] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r/w) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:35,408] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:35,408] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r/w) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:35,416] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:35,416] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r/w) Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:35,424] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Users\cleve\labscript-suite\app_saved_configs\example_apparatus\blacs\JARVIS-STUDIO_BLACS.h5
+[2025-01-10 18:24:36,440] INFO [127.0.0.1] said hello
+[2025-01-10 18:24:36,441] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:24:36,511] INFO [127.0.0.1] said hello
+[2025-01-10 18:24:36,511] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:24:36,759] INFO [127.0.0.1] said hello
+[2025-01-10 18:24:36,760] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:25:59,468] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:25:59,469] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:26:00,614] INFO [127.0.0.1] said hello
+[2025-01-10 18:26:00,614] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:26:53,140] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:26:53,141] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:26:54,261] INFO [127.0.0.1] said hello
+[2025-01-10 18:26:54,262] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:27:48,517] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:27:48,519] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:27:49,692] INFO [127.0.0.1] said hello
+[2025-01-10 18:27:49,693] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:28:02,017] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread acquired (r) Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:28:02,020] INFO [127.0.0.1] JARVIS-STUDIO:BLACS-36176:MainThread released Z:\Experiments\example_apparatus\connection_table.h5
+[2025-01-10 18:28:03,111] INFO [127.0.0.1] said hello
+[2025-01-10 18:28:03,111] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:29:40,813] INFO [127.0.0.1] said hello
+[2025-01-10 18:29:40,814] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:29:41,839] INFO [127.0.0.1] said hello
+[2025-01-10 18:29:41,839] INFO [127.0.0.1] requested the protocol version
+[2025-01-10 18:29:55,580] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:29:55,591] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:29:55,592] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:29:55,592] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,237] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread acquired (r/w) Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,239] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,240] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,246] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,247] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,248] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:00,264] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:Thread-15 acquired (r/w) Z:\Experiments\example_apparatus\zelux_labscript_test\2025\01\10\0000\2025-01-10_0000_zelux_labscript_test_0.h5
+[2025-01-10 18:30:00,267] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:Thread-15 released Z:\Experiments\example_apparatus\zelux_labscript_test\2025\01\10\0000\2025-01-10_0000_zelux_labscript_test_0.h5
+[2025-01-10 18:30:00,270] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-22248:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\2025\01\10\0000\2025-01-10_0000_zelux_labscript_test_0.h5
+[2025-01-10 18:30:00,279] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-22248:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\2025\01\10\0000\2025-01-10_0000_zelux_labscript_test_0.h5
+[2025-01-10 18:30:00,280] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-22248:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\2025\01\10\0000\2025-01-10_0000_zelux_labscript_test_0.h5
+[2025-01-10 18:30:00,281] INFO [127.0.0.1] JARVIS-STUDIO:runmanager.batch_compiler-22248:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\2025\01\10\0000\2025-01-10_0000_zelux_labscript_test_0.h5
+[2025-01-10 18:30:11,592] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread acquired (r) Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
+[2025-01-10 18:30:11,593] INFO [127.0.0.1] JARVIS-STUDIO:runmanager-26228:MainThread released Z:\Experiments\example_apparatus\zelux_labscript_test\.next_sequence_index
